@@ -1,0 +1,51 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 16px 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+  }
+  
+  .navbar-logo {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  
+  .navbar-logo a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .navbar-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+  }
+  
+  .navbar-info a {
+    text-decoration: underline;
+    color: inherit;
+  }
+  
+  .separator {
+    font-size: 1rem;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 24px;
+    font-size: 0.9rem;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .navbar-links a:hover {
+    text-decoration: underline;
+  }
+  
