@@ -1,11 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import './Navbar.css';
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
-      
+    <motion.nav 
+      className="navbar"
+      initial={{ opacity: 0, y: -20 }}  // Starts hidden and slightly above
+      animate={{ opacity: 1, y: 0 }}  // Fades in and moves down
+      transition={{ duration: 1, ease: "easeOut" }} // Smooth transition
+    >
       {/* Logo (Left Side) */}
       <div className="navbar-logo">
         <Link to="/"><img src="/logo.png" alt="HQL"/></Link>
@@ -19,8 +24,7 @@ const Navbar = () => {
         <Link to="/mljournal">ML JOURNAL</Link>
         <Link to="/contact">CONTACT</Link>
       </div>
-
-    </nav>
+    </motion.nav>
   );
 };
 
