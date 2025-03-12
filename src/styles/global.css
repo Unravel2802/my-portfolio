@@ -1,8 +1,8 @@
 /* global.css */
 :root {
-    --primary-color: #4A90E2;
-    --text-color: #333;
-    --background-color: #fff;
+    --primary-color: #fff;
+    --text-color: #0073FF;
+    --background-color: #BCE0FF;
     --accent-color: #FF6347;
 }
 
@@ -43,7 +43,14 @@ header, footer {
 }
 
 h1, h2, h3 {
+    font-family: "Roboto", sans-serif;
+    text-align :center;
+    background-color: inherit;
     margin-bottom: 10px;
+}
+
+.header-wrapper {
+    background-color: var(--global-bg-color);
 }
 
 button {
