@@ -56,7 +56,7 @@ h1, h2, h3 {
     font-size: 4rem;
     font-weight: 700;
     color: var(--text-color);
-    margin-bottom: 7rem; /* Increased gap */
+    margin-bottom: 5rem; /* Increased gap */
 }
 
 
