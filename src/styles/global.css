@@ -7,7 +7,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bevani&display=swap'); /* Ensure this font is available */
+@import url('https://fonts.googleapis.com/css2?family=Bevani&display=swap'); 
 
 * {
     box-sizing: border-box;
@@ -56,11 +56,16 @@ h1, h2, h3 {
     font-size: 4rem;
     font-weight: 700;
     color: var(--text-color);
-    margin-bottom: 5rem; /* Increased gap */
+    margin-bottom: 2rem; /* Increased gap */
 }
 
 
-/* Special styling for "Polymath Developer" */
+.why-polymath {
+    display: block;
+    text-align: center;
+    margin-top: 5rem; /* Increased gap */
+}
+
 .description {
     font-family: "Bevani", sans-serif;
     font-weight: 900;
@@ -76,6 +81,34 @@ h1, h2, h3 {
     text-transform: uppercase;
     margin: 0.1rem 0; /* Reduced gap between text lines */
     line-height: 0.9; /* Adjusted spacing to bring lines closer */
+}
+
+.arrow{
+    font-size: 2rem;
+    color: var(--text-color);
+    display: block;
+    margin-top: -0.5rem;
+    animation: bounce 1.5s infinite;
+}
+
+.scroll-button {
+    font-size: 3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-color);
+    display: block;
+    margin: 2rem auto 0;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
 }
 
 
