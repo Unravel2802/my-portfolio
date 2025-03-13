@@ -21,7 +21,7 @@ const Navbar = () => {
         <Link to="/about">ABOUT</Link>
         <Link to="/projects">PROJECTS</Link>
         <Link to="/experience">EXPERIENCE</Link>
-        <Link to="/mljournal">ML JOURNAL</Link>
+        <Link to="/mljournal">JOURNAL</Link>
         <Link to="/contact">CONTACT</Link>
       </div>
     </motion.nav>
