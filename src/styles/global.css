@@ -1,133 +1,141 @@
-/* global.css */
+/*============================
+  Variables and Fonts
+=============================*/
 :root {
     --primary-color: #fff;
     --text-color: #0073FF;
     --background-color: #BCE0FF;
     --accent-color: #FF6347;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bevani&display=swap'); 
-
-* {
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bevani&display=swap');
+  
+  /*============================
+    Base Styles and Resets
+  =============================*/
+  * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body {
+  }
+  
+  body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
-}
-
-a {
+  }
+  
+  a {
     text-decoration: none;
     color: var(--primary-color);
     transition: color 0.2s ease-in-out;
-}
-
-a:hover {
+  }
+  
+  a:hover {
     color: var(--accent-color);
-}
-
-header, footer {
-    padding: 20px;
-    text-align: center;
-    background-color: #f7f7f7;
-}
-
-.container {
+  }
+  
+  /*============================
+    Layout Helpers
+  =============================*/
+  .container {
     width: 90%;
     max-width: 1200px;
     margin: auto;
     padding: 20px;
-}
-
-h1, h2, h3 {
+  }
+  
+  header,
+  footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #f7f7f7;
+  }
+  
+  /*============================
+    Typography
+  =============================*/
+  h1, h2, h3 {
     font-family: "Roboto", sans-serif;
     text-align: center;
     background-color: inherit;
     margin-bottom: 10px;
-}
-
-.name-title {
+  }
+  
+  .name-title {
     font-size: 4rem;
     font-weight: 700;
     color: var(--text-color);
-    margin-bottom: 2rem; /* Increased gap */
-}
-
-
-.why-polymath {
-    display: block;
-    text-align: center;
-    margin-top: 5rem; /* Increased gap */
-}
-
-.description {
+    margin-bottom: 2rem;
+  }
+  
+  .description {
     font-family: "Bevani", sans-serif;
     font-weight: 900;
     font-size: 10rem;
-    color: white; /* Inner color */
-    -webkit-text-stroke: 3px var(--text-color); /* Blue outline */
-    /* Enhanced 3D effect */
-    text-shadow: 
-        4px 4px 0px rgba(0, 115, 255, 0.8), /* Darker blue */
-        8px 8px 0px rgba(0, 115, 255, 0.6), /* Lighter blue */
-        12px 12px 0px rgba(0, 115, 255, 0.4); /* Soft fading effect */;
-    
     text-transform: uppercase;
-    margin: 0.1rem 0; /* Reduced gap between text lines */
-    line-height: 0.9; /* Adjusted spacing to bring lines closer */
-}
-
-.arrow{
+    color: white;
+    -webkit-text-stroke: 3px var(--text-color);
+    text-shadow: 
+      4px 4px 0px rgba(0, 115, 255, 0.8),
+      8px 8px 0px rgba(0, 115, 255, 0.6),
+      12px 12px 0px rgba(0, 115, 255, 0.4);
+    margin: 0.1rem 0;
+    line-height: 0.9;
+  }
+  
+  .description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+  }
+  
+  /*============================
+    Arrow + Scroll
+  =============================*/
+  .arrow {
     font-size: 2rem;
     color: var(--text-color);
-    display: block;
     margin-top: -0.5rem;
     animation: bounce 1.5s infinite;
-}
-
-.scroll-button {
-    font-size: 3rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: var(--text-color);
     display: block;
-    margin: 2rem auto 0;
-    animation: bounce 1.5s infinite;
-}
-
-@keyframes bounce {
+  }
+  
+  @keyframes bounce {
     0%, 100% {
-        transform: translateY(0);
+      transform: translateY(0);
     }
     50% {
-        transform: translateY(10px);
+      transform: translateY(10px);
     }
-}
-
-
-/* Responsive adjustments */
-@media (max-width: 1024px) {
+  }
+  
+  /*============================
+    Responsive Text Scaling
+  =============================*/
+  @media (max-width: 1024px) {
     .description {
-        font-size: 7rem;
+      font-size: 7rem;
     }
-}
-
-@media (max-width: 768px) {
+  }
+  
+  @media (max-width: 768px) {
     .description {
-        font-size: 5rem;
+      font-size: 5rem;
     }
-}
-
-@media (max-width: 480px) {
+  }
+  
+  @media (max-width: 480px) {
     .description {
-        font-size: 3rem;
-        -webkit-text-stroke: 2px var(--text-color);
+      font-size: 3rem;
+      -webkit-text-stroke: 2px var(--text-color);
     }
-}
+  
+    .name-title {
+      font-size: 2.5rem;
+    }
+  }
+  

@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import About from './pages/About';
-import Projects from './pages/Projects';
+import Portfolio from './pages/Portfolio';
+import Goals from './pages/Goals';
 import Contact from './pages/Contact';
 import MLJournal from './pages/MLJounal';
 import Navbar from './components/shared/Navbar';
@@ -15,8 +15,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/goals" element={<Goals />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/mljournal" element={<MLJournal />} />
         <Route path="/experience" element={<Experience />} />

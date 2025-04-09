@@ -18,10 +18,9 @@ const Navbar = () => {
 
       {/* Navigation Links (Right Side) */}
       <div className="navbar-links">
-        <Link to="/about">ABOUT</Link>
-        <Link to="/projects">PROJECTS</Link>
-        <Link to="/experience">EXPERIENCE</Link>
-        <Link to="/mljournal">JOURNAL</Link>
+        <Link to="/portfolio">PORTFOLIO</Link>
+        <Link to="/mljournal">READING BLOG</Link>
+        <Link to="/goals">GOALS </Link>
         <Link to="/contact">CONTACT</Link>
       </div>
     </motion.nav>
